@@ -14,7 +14,7 @@ std::string student::fullName()
 double student::getScore()
 {
   double final = 0;
-  int counter = 0;
+  int counter = 1;
   for (int i=0; i<total.size(); i++)
   {
     final += total[i];
