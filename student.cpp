@@ -14,11 +14,15 @@ std::string student::fullName()
 double student::getScore()
 {
   double final = 0;
-  int counter = 1;
+  int counter = 0;
   for (int i=0; i<total.size(); i++)
   {
     final += total[i];
     counter ++;
+  }
+  if (counter == 0)
+  {
+    counter++;
   }
   final = final/counter;
   return final;
